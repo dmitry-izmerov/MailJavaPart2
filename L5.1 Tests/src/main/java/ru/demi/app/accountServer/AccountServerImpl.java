@@ -1,18 +1,10 @@
-package accountServer;
+package ru.demi.app.accountServer;
 
-/**
- * @author a.akbashev
- * @author v.chibrikov
- *         <p>
- *         Пример кода для курса на https://stepic.org/
- *         <p>
- *         Описание курса и лицензия: https://github.com/vitaly-chibrikov/stepic_java_webserver
- */
-public class AccountServer implements AccountServerI {
+public class AccountServerImpl implements AccountServer {
     private int usersCount;
     private int usersLimit;
 
-    public AccountServer(int usersLimit) {
+    public AccountServerImpl(int usersLimit) {
         this.usersCount = 0;
         this.usersLimit = usersLimit;
     }

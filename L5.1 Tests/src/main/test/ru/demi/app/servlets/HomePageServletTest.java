@@ -1,7 +1,7 @@
-package servlets;
+package ru.demi.app.servlets;
 
-import accountServer.AccountServer;
-import accountServer.AccountServerI;
+import ru.demi.app.accountServer.AccountServerImpl;
+import ru.demi.app.accountServer.AccountServer;
 import org.junit.Test;
 
 import javax.servlet.http.HttpServletRequest;
@@ -23,7 +23,7 @@ import static org.mockito.Mockito.*;
  *         Описание курса и лицензия: https://github.com/vitaly-chibrikov/stepic_java_webserver
  */
 public class HomePageServletTest {
-    private AccountServerI accountServer = mock(AccountServer.class);
+    private AccountServer accountServer = mock(AccountServerImpl.class);
 
     private HttpServletResponse getMockedResponse(StringWriter stringWriter) throws IOException {
         HttpServletResponse response = mock(HttpServletResponse.class);

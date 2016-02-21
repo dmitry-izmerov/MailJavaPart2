@@ -1,4 +1,4 @@
-package accountServer;
+package ru.demi.app.accountServer;
 
 /**
  * @author a.akbashev

@@ -1,6 +1,6 @@
-package servlets;
+package ru.demi.app.servlets;
 
-import accountServer.AccountServerI;
+import ru.demi.app.accountServer.AccountServer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,9 +21,9 @@ import java.io.IOException;
 public class HomePageServlet extends HttpServlet {
     static final Logger logger = LogManager.getLogger(HomePageServlet.class.getName());
     public static final String PAGE_URL = "/home";
-    private final AccountServerI accountServer;
+    private final AccountServer accountServer;
 
-    public HomePageServlet(AccountServerI accountServer) {
+    public HomePageServlet(AccountServer accountServer) {
         this.accountServer = accountServer;
     }
 

@@ -38,7 +38,7 @@
                     <appendAssemblyId>false</appendAssemblyId>
                     <archive>
                         <manifest>
-                            <mainClass>main.Main</mainClass>
+                            <mainClass>ru.demi.app.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

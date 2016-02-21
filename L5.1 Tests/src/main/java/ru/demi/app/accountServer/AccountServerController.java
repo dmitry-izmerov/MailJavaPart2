@@ -1,4 +1,7 @@
-package accountServer;
+package ru.demi.app.accountServer;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * @author a.akbashev
@@ -9,9 +12,10 @@ package accountServer;
  *         Описание курса и лицензия: https://github.com/vitaly-chibrikov/stepic_java_webserver
  */
 public class AccountServerController implements AccountServerControllerMBean {
-    private final AccountServerI accountServer;
+    private final AccountServer accountServer;
+    private static final Logger logger = LogManager.getLogger(AccountServerController.class);
 
-    public AccountServerController(AccountServerI accountServer) {
+    public AccountServerController(AccountServer accountServer) {
         this.accountServer = accountServer;
     }
 
@@ -26,7 +30,8 @@ public class AccountServerController implements AccountServerControllerMBean {
     }
 
     @Override
-    public void setUsersLimit(int bla) {
-        accountServer.setUsersLimit(bla);
+    public void setUsersLimit(int limit) {
+        accountServer.setUsersLimit(limit);
+        logger.info("Calling of AccountServerController.setUsersLimit with param: " + limit);
     }
 }
