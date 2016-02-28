@@ -1,7 +1,7 @@
 package ru.demi.app.servlets;
 
-import ru.demi.app.accountServer.AccountServerImpl;
-import ru.demi.app.accountServer.AccountServer;
+import ru.demi.app.resourceServer.AccountServerImpl;
+import ru.demi.app.resourceServer.AccountServer;
 import org.junit.Test;
 
 import javax.servlet.http.HttpServletRequest;

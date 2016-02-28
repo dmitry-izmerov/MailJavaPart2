@@ -2,7 +2,7 @@ package ru.demi.app.servlets;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.demi.app.accountServer.AccountServer;
+import ru.demi.app.resourceServer.AccountServer;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

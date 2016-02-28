@@ -1,4 +1,4 @@
-package ru.demi.app.accountServer;
+package ru.demi.app.resourceServer;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

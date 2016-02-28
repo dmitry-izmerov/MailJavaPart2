@@ -1,4 +1,4 @@
-package ru.demi.app.accountServer;
+package ru.demi.app.resourceServer;
 
 public interface AccountServer {
     void addNewUser();

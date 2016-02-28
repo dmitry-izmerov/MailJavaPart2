@@ -1,6 +1,6 @@
 package ru.demi.app.servlets;
 
-import ru.demi.app.accountServer.AccountServer;
+import ru.demi.app.resourceServer.AccountServer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
